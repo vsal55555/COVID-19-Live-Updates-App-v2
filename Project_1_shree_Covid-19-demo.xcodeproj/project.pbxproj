@@ -12,6 +12,7 @@
 		3F469A042444714900E6A375 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F469A022444714900E6A375 /* Main.storyboard */; };
 		3F469A062444715C00E6A375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F469A052444715C00E6A375 /* Assets.xcassets */; };
 		3F469A092444715C00E6A375 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F469A072444715C00E6A375 /* LaunchScreen.storyboard */; };
+		3FEFA7762444DBCC00FE3F1D /* cellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEFA7752444DBCC00FE3F1D /* cellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3F469A052444715C00E6A375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F469A082444715C00E6A375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F469A0A2444715C00E6A375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FEFA7752444DBCC00FE3F1D /* cellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		3F4699FD2444714900E6A375 /* Project_1_shree_Covid-19-demo */ = {
 			isa = PBXGroup;
 			children = (
+				3FEFA7752444DBCC00FE3F1D /* cellTableViewCell.swift */,
 				3F4699FE2444714900E6A375 /* AppDelegate.swift */,
 				3F469A002444714900E6A375 /* ViewController.swift */,
 				3F469A022444714900E6A375 /* Main.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FEFA7762444DBCC00FE3F1D /* cellTableViewCell.swift in Sources */,
 				3F469A012444714900E6A375 /* ViewController.swift in Sources */,
 				3F4699FF2444714900E6A375 /* AppDelegate.swift in Sources */,
 			);
