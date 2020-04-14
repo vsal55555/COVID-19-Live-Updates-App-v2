@@ -22,6 +22,10 @@ var name = ["Where to call for help","About COVID-19","Prevention","If you  get 
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource{
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
+    }
     //needed 2 methods to conform tableview controller delegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return name.count
@@ -30,8 +34,15 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? cellTableViewCell
 //cast this cell to tableviewcell so xcode knows
         //now we've to pass array data to this new cell
-        
+        cell?.cellLbl.text = name[indexPath.row]
+        cell?.cellImg.image = UIImage(named: name[indexPath.row])
         return cell!
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "detailViewController") as? detailViewController
+        self.navigationController?.pushViewController(vc!, animated: true)
+            vc?.image = UIImage(named: name[indexPath.row])!
+            vc?.name = name[indexPath.row]
     }
 }
 

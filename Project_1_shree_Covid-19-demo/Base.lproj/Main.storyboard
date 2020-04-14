@@ -61,7 +61,7 @@
                                                         <constraint firstAttribute="width" constant="100" id="g8n-Ol-T0Q"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where to call help" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vI7-FS-5vE">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vI7-FS-5vE">
                                                     <rect key="frame" x="125" y="35" width="234" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="nHT-Iq-c2y"/>
@@ -112,10 +112,10 @@
             </objects>
             <point key="canvasLocation" x="572" y="1141.9790104947526"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="hAw-hC-VBJ">
             <objects>
-                <viewController id="etg-Ed-xIE" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="etg-Ed-xIE" customClass="detailViewController" customModule="Project_1_shree_Covid_19_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UZ9-2U-NUQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -129,7 +129,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dlF-27-f0E">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dlF-27-f0E">
                                 <rect key="frame" x="20" y="139" width="339" height="144"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="144" id="uyc-vD-BDY"/>
@@ -147,10 +147,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SAo-Wb-aea"/>
                     </view>
+                    <connections>
+                        <outlet property="detailImg" destination="dlF-27-f0E" id="ibz-0k-Xg6"/>
+                        <outlet property="detailLabel" destination="7yB-pN-cYI" id="xKM-E2-fpX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C2O-Tp-Dl6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="572" y="1953.3733133433284"/>
+            <point key="canvasLocation" x="572" y="1895"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fAe-p8-Ki7">
