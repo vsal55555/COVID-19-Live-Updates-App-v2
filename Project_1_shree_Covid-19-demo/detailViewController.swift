@@ -10,16 +10,17 @@ import UIKit
 
 class detailViewController: UIViewController {
 
+   
+    
     @IBOutlet weak var detailLabel: UILabel!
-    @IBOutlet weak var detailImg: UIImageView!
     
     //that holds data sent from the previous vc
-    var image = UIImage()
+    //var image = UIImage()
     var name = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-        detailLabel.text = "you pressed \(name)"
-        detailImg.image = image
+        detailLabel.text = "\(name)"
+        //detailImg.image = image
         // Do any additional setup after loading the view.
     }
     

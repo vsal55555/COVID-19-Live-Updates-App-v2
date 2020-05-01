@@ -1,0 +1,6 @@
+framework module Pods_Project_1_shree_Covid_19_demo {
+  umbrella header "Pods-Project_1_shree_Covid-19-demo-umbrella.h"
+
+  export *
+  module * { export * }
+}
